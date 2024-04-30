@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="status">
+        <label for="status">Status: </label>
+        <span name="status" [style.color]="task.status == 'Open' ? 'red' : task.status == 'Done' ? 'green' :'orange'">{{task.status}}</span>
+    </div>
+    <h2 tooltip="title" class="title">{{task.title}}</h2>
+    <p class="desc">{{task.description}}</p>
+
+    <label for="createdDate">Created: </label>
+    <span name="createdTime" >{{task.creationTime | date: 'd MMM yyyy'}}</span>
+    <div>
+        <label for="dueDate">Due Date: </label>
+        <span name="dueDate" >{{task.dueDate | date: 'd MMM yyyy'}}</span>
+    </div>
+    <div tooltip="user">
+        <span style="font-weight: bold;"> {{task.user.firstName + task.user.lastName | titlecase }} </span>
+    </div>
+    <div class="categories">
+        <!-- TODO -->
+    </div>
+</div>

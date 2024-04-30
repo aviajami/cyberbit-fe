@@ -1,3 +1,6 @@
 <div class="tasks-container">
   <h1>This tab present all users tasks</h1>
+  <ul>
+    <app-task *ngFor="let task of allTasks" [task]="task"></app-task>
+  </ul>
 </div>

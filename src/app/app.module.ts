@@ -16,6 +16,8 @@ import { TasksComponent } from './home/tasks/tasks.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { TokenInterceptor } from './services/token-interceptor';
+import { TaskComponent } from './home/task/task.component';
+import { CustomTooltipDirective} from './shared/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { TokenInterceptor } from './services/token-interceptor';
     LoginComponent,
     HomeComponent,
     TasksComponent,
-    UsersComponent
+    UsersComponent,
+    TaskComponent,
+    CustomTooltipDirective
   ],
   imports: [
     BrowserModule,
